@@ -264,7 +264,7 @@ function fazerEscolha(opcao) {
 
         // Reabilita os botões após o timeout de 2 segundos
         desabilitarBotoes(false);
-    }, 4000); // Exibe a mensagem por 4 segundos antes de executar a ação
+    }, 3000); // Exibe a mensagem por 4 segundos antes de executar a ação
 }
 
 // Função para verificar as vidas restantes
@@ -298,7 +298,7 @@ function mostrarMensagem(mensagem) {
     // Remove a mensagem após 2 segundos
     setTimeout(function() {
         elementoMensagem.remove();
-    }, 4000);
+    }, 3000);
 }
 
 // Quando a página é recarregada ou carregada pela primeira vez
