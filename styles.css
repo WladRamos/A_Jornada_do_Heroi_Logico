@@ -1,0 +1,135 @@
+/* Fonte padrão medieval */
+body {
+    font-family: 'MedievalSharp', sans-serif;
+    background-color: #f4e8c1; /* Cor de pergaminho */
+    color: #333; /* Texto escuro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra leve para o texto */
+    background-size: cover;
+}
+
+/* Centraliza os elementos dentro da div #config */
+#config{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Preenche a altura total da tela */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f4e8c1;
+    color: #3d2914;
+}
+
+/* Estilo para o título */
+.titulo, #titulo-cenario {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #d4af37; /* Tom de ouro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para relevo */
+}
+
+/* Estilo para o contexto da história e descrição do cenário */
+.quadro-contexto, #descricao-cenario {
+    border: 5px solid #7a5230; /* Borda em bronze */
+    padding: 20px;
+    margin: 15px auto; /* Centraliza o quadro horizontalmente */
+    background-color: #f6e6d0; /* Fundo estilo pergaminho */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra interna para dar efeito de papel antigo */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%; /* Largura similar ao quadro-contexto */
+}
+
+/* Ajusta a imagem do cenário para o mesmo tamanho da imagem de capa */
+#imagem-capa, #imagem-cenario {
+    width: 30%; /* Ajuste para manter as imagens consistentes */
+    height: auto;
+    border: 5px solid #7a5230; /* Borda em bronze ou madeira */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombra para efeito de profundidade */
+}
+
+/* Estilo para o input de escolha do nome */
+#escolha-nome {
+    margin: 20px;
+}
+
+label, input {
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 2px solid #7a5230; /* Tom de bronze para bordas */
+    background-color: #f9f4e7; /* Cor de pergaminho */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra interna para profundidade */
+}
+
+/* Estilo para o botão de confirmação */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4b3621; /* Cor de ferro envelhecido */
+    color: #f0e5d1; /* Tom claro para contraste */
+    border: 2px solid #2f1d0f; /* Bordas mais escuras para relevo */
+    border-radius: 8px; /* Bordas mais suaves */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    cursor: pointer;
+    font-family: 'MedievalSharp', sans-serif; /* Mantendo a tipografia medieval */
+}
+
+button:hover {
+    background-color: #3a2b1e; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para a tela de jogo (após o início) */
+#inicio-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Estilo para os botões de escolha */
+#botoes-escolhas button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4b3621;
+    color: #f0e5d1;
+    border: 2px solid #2f1d0f;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#botoes-escolhas button:hover {
+    background-color: #3a2b1e;
+}
+
+/* Vidas restantes */
+p {
+    font-size: 20px;
+    color: #3d2914;
+}
+
+/* Estilo para o pop-up de mensagem */
+.popup-mensagem {
+    border: 5px solid #7a5230; /* Borda em bronze */
+    background-color: #f6e6d0; /* Fundo estilo pergaminho */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombra para profundidade */
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 10px;
+    color: #3d2914; /* Cor do texto */
+}

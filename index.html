@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>A Jornada do Herói Lógico</title>
+</head>
+<body>
+    <main>
+        <div id="config">
+            <h1 class="titulo">A Jornada do Herói Lógico</h1>
+            <div class="quadro-contexto">
+                Você é um guerreiro destemido que foi escolhido para proteger seu reino dos monstros que começaram a invadir o território. Mas não é sua força física que trará a vitória, e sim sua inteligência. Sua missão é atravessar a Terra dos Pesadelos, uma região cheia de armadilhas, monstros e puzzles mágicos. Suas decisões determinarão se você voltará como um herói ou será derrotado pelas forças das trevas.
+            </div>
+            
+            <!-- Novo quadro-capa para exibir a imagem da aventura -->
+            <div id="quadro-capa">
+                <img id="imagem-capa" src="images/capa.webp" alt="Imagem da aventura">
+            </div>
+        
+            <div id="escolha-nome">
+                <label for="nome-jogador">Digite o nome do herói para iniciar a aventura:</label>
+                <input type="text" id="nome-jogador" name="nome-jogador">
+                <button onclick="iniciarJogo()">Confirmar</button>
+            </div>
+        </div>
+        
+        <div id="inicio-jogo" style="display:none;">
+            <div id="titulo-cenario">
+                <!-- A descrição do cenário será preenchida dinamicamente -->
+            </div>
+            
+            <div id="descricao-cenario">
+                <!-- A descrição do cenário será preenchida dinamicamente -->
+            </div>
+            <div id="quadro-cenario">
+                <img id="imagem-cenario" src="" alt="Imagem do cenário">
+            </div>
+            <div id="desafio-cenario">
+                <!-- A descrição do cenário será preenchida dinamicamente -->
+            </div>
+            <div id="botoes-escolhas">
+                <!-- Botões de escolha dinâmicos -->
+                <button class="botao-escolha" id="opcao1"></button>
+                <button class="botao-escolha" id="opcao2"></button>
+                <button class="botao-escolha" id="opcao3"></button>
+            </div>
+            <p>Vidas restantes: <span id="vidas-restantes"></span></p>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
