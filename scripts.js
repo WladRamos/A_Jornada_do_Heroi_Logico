@@ -298,7 +298,7 @@ function mostrarMensagem(mensagem) {
     // Remove a mensagem após 2 segundos
     setTimeout(function() {
         elementoMensagem.remove();
-    }, 2000);
+    }, 4000);
 }
 
 // Quando a página é recarregada ou carregada pela primeira vez
